@@ -1,5 +1,5 @@
-import css from "./Alert.module.css";
+import "./Alert.css";
 
 export default function Alert() {
-  return <p className={css.alert}>This is alert text</p>;
+  return <p className="alert">This is alert text</p>;
 }

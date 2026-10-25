@@ -1,3 +1,9 @@
+import css from "./Alert.module.css";
+
 export default function App() {
-  return <>hello</>;
+  return (
+    <>
+      <p className={css.error}>golf</p>
+    </>
+  );
 }

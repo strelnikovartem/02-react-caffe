@@ -1,19 +1,12 @@
-import css from "./Alert.module.css";
-import Button from "./button";
-import UserMenu from "./UserMenu";
+import css from "./App.module.css";
+import CafeInfo from "./CafeInfo";
 
 export default function App() {
   return (
     <>
-      <p className={css.error}>golf</p>
-      <Button
-        variant="primary"
-        text="Login"
-      />
-      <Button
-        variant="secondary"
-        text="Follow"
-      />
+      <div className={css.app}>
+        <CafeInfo />
+      </div>
     </>
   );
 }

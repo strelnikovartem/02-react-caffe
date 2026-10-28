@@ -1,7 +1,17 @@
+import { useState } from "react";
 import css from "./App.module.css";
 import CafeInfo from "./CafeInfo";
 
 export default function App() {
+  const [clicks, setClicks] = useState(0);
+
+  const handleClick = () => {
+    setClicks(clicks + 1);
+    console.log(clicks);
+  };
+
+  return <button onClick={handleClick}>Current: {clicks}</button>;
+
   return (
     <>
       <div className={css.app}>

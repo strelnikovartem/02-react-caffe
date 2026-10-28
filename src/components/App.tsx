@@ -3,7 +3,11 @@ import css from "./App.module.css";
 import CafeInfo from "./CafeInfo";
 
 export default function App() {
-  const [clicks, setClicks] = useState(0);
+  const [votes, setVotes] = useState({
+    good: 0,
+    neutral: 0,
+    bad: 0,
+  });
 
   const handleClick = () => {
     setClicks(clicks + 1);
